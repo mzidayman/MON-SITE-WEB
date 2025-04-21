@@ -1,0 +1,98 @@
+/* Structure globale */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur central */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin-top: 40px;
+}
+
+/* Titre principal */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007BFF;
+}
+
+/* Relais */
+.relais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.relais-item {
+    width: 45%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Boutons relais */
+.btn-relais {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-relais:hover {
+    background-color: #0056b3;
+}
+
+/* État du relais */
+.status {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Zone de planification */
+.schedule {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.schedule h2 {
+    color: #28a745;
+}
+
+.schedule label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.schedule input,
+.schedule select,
+.schedule button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.schedule button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.schedule button:hover {
+    background-color: #218838;
+}
