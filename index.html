@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrôle des relais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contrôle des relais à distance</h1>
+        
+        <div class="relais">
+            <div class="relais-item">
+                <button id="relais1" class="btn-relais" aria-label="Activer ou désactiver le relais 1" onclick="toggleRelay(1)">Relais 1</button>
+                <p id="status_relais1" class="status">Désactivé</p>
+            </div>
+            <div class="relais-item">
+                <button id="relais2" class="btn-relais" aria-label="Activer ou désactiver le relais 2" onclick="toggleRelay(2)">Relais 2</button>
+                <p id="status_relais2" class="status">Désactivé</p>
+            </div>
+            <div class="relais-item">
+                <button id="relais3" class="btn-relais" aria-label="Activer ou désactiver le relais 3" onclick="toggleRelay(3)">Relais 3</button>
+                <p id="status_relais3" class="status">Désactivé</p>
+            </div>
+            <div class="relais-item">
+                <button id="relais4" class="btn-relais" aria-label="Activer ou désactiver le relais 4" onclick="toggleRelay(4)">Relais 4</button>
+                <p id="status_relais4" class="status">Désactivé</p>
+            </div>
+            <div class="relais-item">
+                <button id="relais5" class="btn-relais" aria-label="Activer ou désactiver le relais 5" onclick="toggleRelay(5)">Relais 5</button>
+                <p id="status_relais5" class="status">Désactivé</p>
+            </div>
+            <div class="relais-item">
+                <button id="relais6" class="btn-relais" aria-label="Activer ou désactiver le relais 6" onclick="toggleRelay(6)">Relais 6</button>
+                <p id="status_relais6" class="status">Désactivé</p>
+            </div>
+            <div class="relais-item">
+                <button id="relais7" class="btn-relais" aria-label="Activer ou désactiver le relais 7" onclick="toggleRelay(7)">Relais 7</button>
+                <p id="status_relais7" class="status">Désactivé</p>
+            </div>
+            <div class="relais-item">
+                <button id="relais8" class="btn-relais" aria-label="Activer ou désactiver le relais 8" onclick="toggleRelay(8)">Relais 8</button>
+                <p id="status_relais8" class="status">Désactivé</p>
+            </div>
+        </div>
+
+        <div class="schedule">
+            <h2>Planifier l'activation d'un relais</h2>
+            <label for="relais_schedule">Choisir un relais:</label>
+            <select id="relais_schedule">
+                <option value="1">Relais 1</option>
+                <option value="2">Relais 2</option>
+                <option value="3">Relais 3</option>
+                <option value="4">Relais 4</option>
+                <option value="5">Relais 5</option>
+                <option value="6">Relais 6</option>
+                <option value="7">Relais 7</option>
+                <option value="8">Relais 8</option>
+            </select>
+            <label for="time_schedule">Heure:</label>
+            <input type="time" id="time_schedule">
+            <button onclick="scheduleRelay()">Programmer</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
